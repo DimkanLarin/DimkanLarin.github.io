@@ -1,0 +1,69 @@
+#global-header,
+#left-menu,
+#info,
+#prev-result
+{
+	display: none;
+}
+
+#content
+{
+	position: static;
+}
+
+.scrollable .viewport
+{
+	overflow-y: auto;
+	height: auto !important;
+}
+
+.scrollable.default-skin .scroll-bar.vertical
+{
+	display: none !important;
+}
+
+.scrollable .viewport .overview
+{
+	position: static;
+}
+
+footer
+{
+    display: none;
+}
+
+button
+{
+    display: none;
+}
+
+.print-hidden
+{
+    display: none;
+}
+
+.task-block .panel-body
+{
+    overflow: auto;
+}
+
+.task-block .panel-footer
+{
+    display: none;
+}
+
+.task-block .panel-body img
+{
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+#page-main-header
+{
+	font-size: 20px;
+}
+
+.panel
+{
+	margin-bottom: 0;
+}

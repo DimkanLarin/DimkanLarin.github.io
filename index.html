@@ -1,383 +1,1196 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+    <html lang="ru-RU" xmlns:og="http://ogp.me/ns#">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" type="image/svg+xml" href="fonts/logo_short.svg">
+        <link rel="alternate icon" href="favicon.ico">
+        <link rel="mask-icon" href="fonts/logo_short.svg" color="#ffffff">
+                <meta property="og:image" content="images/og_image.jpg">
+        <!--<meta name="author" content="fuegoalma">-->
+                <title>Uchus.Online | Курсы</title>
+        <meta name="keywords" content="курсы, видеокурсы, ЕГЭ, ОГЭ, экзамен, онлайн-школа, репетитор, подготовка, математика профиль, банк задач">
+<meta name="description" content="Курсы подготовки к ЕГЭ по математике профильного уровня, базового и ОГЭ">
+<meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="yvHW2aBPiuM3a21F51N3t54BgJ_N5wH-VCvOR4NaDWiSvqGulTvcvG4_JRPQGTjd8m7Qq6_QN4QHQ5cs7hFUPw==">
 
-     <title>Ben's Resume - Profile HTML Page</title>
+<link href="css/80775e1a0b733c46dd56fc7abe20842e.css" rel="stylesheet">
+<script src="js/e11b9d18cd42a81d9dd49d8a6b478a02.js"></script>                <link href="css/print.css" rel="stylesheet" media="print">
+    </head>
+    <body class>
+                
+        <form action="/logout" method="post" name="logout-top">
+            <input type="hidden" name="_csrf" value="yvHW2aBPiuM3a21F51N3t54BgJ_N5wH-VCvOR4NaDWiSvqGulTvcvG4_JRPQGTjd8m7Qq6_QN4QHQ5cs7hFUPw==">
+        </form>
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <div id="MathJax_Message" style="display: none;"></div>
+        <div class="visible-print-block">Сайт подготовки к экзаменам Uchus.online</div>
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
-<!--
-Tooplate 2120 Ben Resume
-https://www.tooplate.com/view/2120-ben-resume
--->
-</head>
-
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-
-    <!-- MENU BAR -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-
-            <a class="navbar-brand" href="#">
-                Ben Resume
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <div id="global-header">
+            <button class="left-menu-toggler" title="toggle left menu">
+                <i class="fas fa-bars"></i>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link smoothScroll">About Me</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link smoothScroll">Reviews</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="#" class="custom-btn btn" download>Download CV</a>
+            <button class="search-toggler" title="Искать">
+                <i class="fas fa-search"></i>
+            </button>
+                        <div id="search-block" class>
+                <form action="/search" method="get" id="search-form">
+                    <input type="text" class="borderless-input" value placeholder="Поиск по задачам" name="text">
+                </form>
+                <div class="close-button">
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
-
-        </div>
-    </nav>
-
-
-    <!-- HERO -->
-    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
-
-         <div class="container">
-            <div class="row">
-
-                  <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="images/ben.jpg" class="img-fluid" alt="Ben Resume HTML Template">
-                  </div>
-
-                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-                        <div class="hero-text">
-
-                            <h1 class="hero-title">👋 Ben, a digital nomad</h1>
-
-                            <a href="#" class="email-link">
-                                hello@company.co
-                            </a>
-                          
-                        </div>
+                            <div class="unlogged-menu pull-right">
+                    <button id="login" data-toggle="modal" data-target="#login-modal">Войти</button>
+                    <button id="signup" data-toggle="modal" data-target="#signup-modal">Регистрация</button>
+                </div>
                     </div>
 
-            </div>
-        </div>
-    </section>
-
-
-    <section class="about section-padding" id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-12">
-                    <h3 class="mb-4">This is Ben's Resume</h3>
-
-                    <p>Ben Resume HTML Template is brought to you by <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate website</a>. You can feel free to edit and use this page for your small site. You are allowed to use this HTML template for any kind of purpose.</p>
-
-                    <p>However, please do not re-distribute the downloadable template ZIP file on any template collection website. This is strongly prohibited. Please contact Tooplate for more information.</p>
-
-                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                        <li><strong>Full Name :</strong> Ben Wilson </li>
-
-                        <li><strong>Date of Birth:</strong> 26 September 1999</li>
-
-                        <li><strong>Website :</strong> company.co</li>
-
-                        <li><strong>Email :</strong> hello@company.co</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-5 mx-auto col-md-6 col-12">
-                    <img src="images/true-agency.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
-                </div>
-
-            </div>
-            <div class="row about-third">
-            	<div class="col-lg-4 col-md-4 col-12">
-                <h3>Integer volutpat</h3>
-                <p>Sed eu risus tincidunt, finibus dolor non, gravida ex. Donec lacinia mi nec erat tempus, vel consectetur ante scelerisque. Ut blandit, risus in venenatis ultricies, lacus tellus fermentum.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Mauris semper</h3>
-                <p>Cras et nisl vestibulum, accumsan elit sed, pretium enim. Vestibulum in condimentum magna. Maecenas quam magna, iaculis eu turpis et, commodo pulvinar leo.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Integer id neque</h3>
-                <p>Duis at mollis leo, venenatis congue ex. Cras urna dui, gravida euismod lectus et, cursus tempor nulla. Praesent at turpis quis ex tristique gravida quis eget eros.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- TESTIMONIAL -->
-     <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h3 class="mb-5 text-center">What People say</h3>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Ben</h6>
-                                        <span>Art Director</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Marie</h6>
-                                        <span>Marketing Consultant</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Jen</h6>
-                                        <span>Product Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image04.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Wilson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- FAQ -->
-     <section class="faq section-padding">
-        
-        <div class="container">
-            
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h3 class="mb-5">Frequently Asked Questions</h3>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Are those HTML templates absolutely free for any kind of usage?
-                            </button>
-                          </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, they are 100% free and there is no hidden charge.</p>
-
-                            <p>They can be used for your commercial websites.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Can I use them as a CMS theme or a part of website builder?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, you can use them.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              I cannot find a suitable HTML template. Can I request new template?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Yes, please tell us what you need. We will try our best to fulfill it.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Can I redistribute your templates?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>No, this is totally NOT allowed. Please do not redistribute our HTML templates.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              How do I support Tooplate?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>Please spread a word about Tooplate website to your colleagues and friends.</p>
-                          </div>
-                        </div>
-                    </div>
-
-                    <span class="faq-info-text">Please send us a message if you have anything to say. Send an email message to <strong>contact (at) tooplate (dot) com</strong></span>
-
-                </div>
-
-           	 </div><!-- col -->
-        	</div><!-- row -->
-        </div><!-- container -->
-    </section>
-
-
-     <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 col-12">
-            <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
-                    <label for="cf-name" class="webform-label">Full Name</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form>
-          </div>
-
-            <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-
-                <p class="mb-1">010-020-0340</p>
-
-                <p>
-                    <a href="#">
-                        hello@company.co
-                    <i class="fas fa-arrow-right custom-icon"></i>
+        <div id="left-menu">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="/">
+                        <img src="fonts/logo_full.svg" alt="logo" class="full">
+                        <img src="fonts/logo_short.svg" alt="logo" class="short">
                     </a>
-                </p>
+                </div>
+                <div class="scrolleble-container default-skin">
+                    <div class="scrolleble-wrapper">
+                        <!-- rubrics menu -->
+                            <div class="menu-section">
+                <ul class="vertical-navigation-menu">
+                                            <li class="menu-item">
+                    <a href="/rubrics/1" class="clearfix active metric-call" data-metric-key="side_course" target="_self">
+                                                    <i class="fas fa-play"></i>
+                                                <span class="link-title">Курсы</span>
+                                            </a>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="/rubrics/2" class="clearfix  metric-call" data-metric-key="side_var" target="_self">
+                                                    <i class="fas fa-edit"></i>
+                                                <span class="link-title">Варианты и тесты</span>
+                                            </a>
+                                    </li>
+                    </ul>
+    </div>
+                        <!-- !rubrics menu -->
 
-                <ul class="social-links mt-2">
-                    <li><a href="https://fb.com/tooplate" rel="noopener" class="fab fa-facebook"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-twitter"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-instagram"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-linkedin"></a></li>
-                    <li><a href="#" rel="noopener" class="fab fa-youtube"></a></li>
-                </ul>
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2020 Ben Resume Page</p>
-                
-                <p>Design: <a href="https://www.tooplate.com" title="free HTML templates" target="_blank">Tooplate</a></p>
+                        <!-- banks menu -->
+                            <div class="menu-section">
+                                    <div class="header empty"></div>
+                            <ul class="vertical-navigation-menu">
+                                            <li class="menu-item">
+                    <a href="#" class="clearfix  toggler " data-metric-key target="_self">
+                                                    <i class="fas fa-book"></i>
+                                                <span class="link-title">Задачи ЕГЭ профиль</span>
+                                                    <span class="arrow">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                                            </a>
+                                            <ul class="submenu">
+                                                                                            <li>
+                                    <a href="/tasks/bank/4" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">1. Простые текстовые задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/12" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">2. Графики и диаграммы</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/11" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">3. Фигуры на квадратной решетке. Координатная плоскость</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/24" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">4. Теория вероятностей</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/27" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">5. Уравнения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/36" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">6. Планиметрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/40" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">7. Производная</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/44" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">8. Стереометрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/48" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">9. Нахождение значений выражений</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/54" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">10. Задачи прикладного содержания</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/58" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">11. Текстовые задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/64" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">12. Исследование функций</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/70" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">13. Сложные уравнения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/75" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">14. Стереометрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/76" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">15. Неравенства</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/77" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">16. Планиметрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/78" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">17. Экономические задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/79" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">18. Параметры</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/80" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">19. Теория чисел</span>
+                                                                            </a>
+                                                                    </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="#" class="clearfix  toggler " data-metric-key target="_self">
+                                                    <i class="fas fa-book"></i>
+                                                <span class="link-title">Задачи ЕГЭ база</span>
+                                                    <span class="arrow">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                                            </a>
+                                            <ul class="submenu">
+                                                                                            <li>
+                                    <a href="/tasks/bank/9" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">1. Вычисления с дробями</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/34" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">2. Степени</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/159" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">3. Проценты и пропорции</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/160" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">4. Вычисления по формуле</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/161" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">5. Значения выражений</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/162" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">6. Простейшие текстовые задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/163" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">7. Уравнения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/164" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">8. Прикладные задачи по геометрии</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/165" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">9. Величины и значения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/166" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">10. Теория вероятностей</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/167" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">11. Графики, диаграммы, таблицы</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/168" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">12. Выбор подходящих вариантов</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/169" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">13. Стереометрия. Тела вращения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/170" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">14. Функции и производные</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/171" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">15. Планиметрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/172" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">16. Стереометрия. Многогранники</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/173" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">17. Неравенства и числовая прямая</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/174" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">18. Выбор утверждений</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/175" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">19. Свойства чисел</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/176" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">20. Нестандартные задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="#" class="clearfix  toggler " data-metric-key target="_self">
+                                                    <i class="fas fa-book"></i>
+                                                <span class="link-title">Задачи ОГЭ</span>
+                                                    <span class="arrow">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                                            </a>
+                                            <ul class="submenu">
+                                                                                            <li>
+                                    <a href="/tasks/bank/10" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">1. Практическая задача I</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/81" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">2. Практическая задача II</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/82" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">3. Практическая задача III</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/84" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">4. Практическая задача IV</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/85" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">5. Практическая задача V</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/86" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">6. Вычисления</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/91" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">7. Координатная прямая. Числовые неравенства</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/96" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">8. Действительные числа. Степени. Сравнения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/100" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">9. Уравнения</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/105" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">10. Теория вероятностей</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/106" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">11. Графики функций</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/112" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">12. Расчеты по формулам</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/113" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">13. Неравенства</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/107" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">14. Прогрессии</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/118" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">15. Треугольники</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/122" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">16. Окружности</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/126" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">17. Четырехугольники и многоугольники</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/132" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">18. Фигуры на квадратной решетке</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/136" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">19. Анализ геометрических утверждений</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/137" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">20. Уравнения, выражения, неравенства</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/138" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">21. Сложные текстовые задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/139" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">22. Построение графиков</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/140" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">23. Геометрические задачи на вычисление</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/141" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">24. Геометрические задачи на доказательство</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/142" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">25. Сложные геометрические задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/143" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">26. Устаревшие задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="#" class="clearfix  toggler " data-metric-key target="_self">
+                                                    <i class="fas fa-book"></i>
+                                                <span class="link-title">Разные задачи</span>
+                                                    <span class="arrow">
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                                            </a>
+                                            <ul class="submenu">
+                                                                                            <li>
+                                    <a href="/tasks/bank/216" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">1. Чётность</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/217" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">2. Делимость</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/218" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">3. Игры</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/219" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">4. Комбинаторика</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/220" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">5. Текстовые задачи</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/222" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">6. Вычисления</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/223" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">7. Планиметрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                                                            <li>
+                                    <a href="/tasks/bank/224" class="clearfix  " data-metric-key target="_self">
+                                                                                <span class="link-title">8. Стереометрия</span>
+                                                                            </a>
+                                                                    </li>
+                                                    </ul>
+                                    </li>
+                    </ul>
+    </div>
+                        <!-- !banks menu -->
+
+                        <!-- socials menu -->
+                            <div class="menu-section">
+                                    <div class="header empty"></div>
+                            <ul class="vertical-navigation-menu">
+                                            <li class="menu-item">
+                    <a href="https://www.youtube.com/user/lomonosovclubvideo?sub_confirmation=1" class="clearfix  metric-call" data-metric-key="youtube_1" target="_blank">
+                                                    <i class="fab fa-youtube"></i>
+                                                <span class="link-title">YouTube канал</span>
+                                            </a>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="https://vk.com/app5898182_-86125741#s=1130965" class="clearfix  metric-call" data-metric-key="main_vk" target="_blank">
+                                                    <i class="fab fa-vk"></i>
+                                                <span class="link-title">Группа ВК</span>
+                                            </a>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="/feedback" class="clearfix  metric-call" data-metric-key="feedback_main" target="_self">
+                                                    <i class="fas fa-envelope"></i>
+                                                <span class="link-title">Обратная связь</span>
+                                            </a>
+                                    </li>
+                    </ul>
+    </div>
+                        <!-- !socials menu -->
+
+                        <!-- socials menu -->
+                            <div class="menu-section">
+                                    <div class="header empty"></div>
+                            <ul class="vertical-navigation-menu">
+                                            <li class="menu-item">
+                    <a href="/pages/discounts" class="clearfix  " data-metric-key target="_self">
+                                                    <i class="fas fa-money-bill-alt"></i>
+                                                <span class="link-title">Система скидок</span>
+                                            </a>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="/pages/aboutme" class="clearfix  " data-metric-key target="_self">
+                                                    <i class="fas fa-file"></i>
+                                                <span class="link-title">Информация о компании</span>
+                                            </a>
+                                    </li>
+                                            <li class="menu-item">
+                    <a href="/pages/soglashenie" class="clearfix  " data-metric-key target="_self">
+                                                    <i class="fas fa-check-square"></i>
+                                                <span class="link-title">Пользовательское соглашение</span>
+                                            </a>
+                                    </li>
+                    </ul>
+    </div>
+                        <!-- !socials menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="wrapper default-skin">
+                <div class="overview-shifter">
+                    
+                    <div id="rubrics">
+    <h1 id="page-main-header">Курсы</h1>
+    <div class="alert alert-light" role="alert">
+        Курсы подготовки к ЕГЭ по математике профильного уровня, базового и ОГЭ    </div>
+
+            
+<div class="alert alert-warning about-discounts" role="alert">
+    Важно: чем больше курсов покупаете разом, тем больше скидка: 2 -> 5%, 3 -> 10%, 4-5 -> 15%, 6-7 -> 20%, 8 -> 25%, 9+ -> 30%. Подробнее можно <a href="/pages/discounts" target="_blank">прочитать тут</a>
+</div>
+
+            <div class="form-group">
+        <ul class="tag-editor view-only">
+            <li style="width:1px">&nbsp;</li>
+            <li data-target="all" class data-id="none">
+                <div class="tag-editor-spacer">&nbsp;,</div>
+                <div class="tag-editor-tag">Все</div>
+                <div class="tag-editor-delete">&nbsp;</div>
+            </li>
+                            <li data-target="tag-1" class="active" data-id="1">
+                    <div class="tag-editor-spacer">&nbsp;,</div>
+                    <div class="tag-editor-tag">ЕГЭ</div>
+                    <div class="tag-editor-delete">&nbsp;</div>
+                </li>
+                            <li data-target="tag-2" class data-id="2">
+                    <div class="tag-editor-spacer">&nbsp;,</div>
+                    <div class="tag-editor-tag">ОГЭ и другие</div>
+                    <div class="tag-editor-delete">&nbsp;</div>
+                </li>
+                    </ul>
+    </div>
+    <input type="hidden" name="selected_tag" value="1">
+
+        <div class="panel panel-default darker">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Платные курсы (<span class="courses-counter">9</span>)
+                </h4>
+                <div id="purchase-all" class="btn btn-success" data-rubric-id="1">Добавить все в корзину</div>
             </div>
 
-        </div>
-      </div>
-    </section>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+            <div class="panel-body pb-2 tags-filtered">
+                <div class="row list-of-cards">
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/10" class="link"></a>
+    
+    <h4>Первая часть ЕГЭ (1-12)</h4>
+    <div class="description">Задачи с коротким ответом<br>560 уроков</div>
 
-</body>
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="10">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/2" class="link"></a>
+    
+    <h4>Параметры с нуля</h4>
+    <div class="description">18 задача ЕГЭ + теория про функции<br>372 урока</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="2">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/16" class="link"></a>
+    
+    <h4>13 задача ЕГЭ (новый)</h4>
+    <div class="description">Тригонометрические и иные уравнения<br>163 урока и задачи</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="16">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-2  hidden">
+                            <div class="card withdrawn">
+    
+            <a href="/courses/new/4" class="link"></a>
+    
+    <h4>13 задача ЕГЭ</h4>
+    <div class="description">Тригонометрические, показательные, логарифмические уравнения<br>112 уроков</div>
+
+    
+    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/5" class="link"></a>
+    
+    <h4>14 задача ЕГЭ</h4>
+    <div class="description">Стереометрия + метод координат<br>255 уроков</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="5">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/3" class="link"></a>
+    
+    <h4>15 задача ЕГЭ</h4>
+    <div class="description">Неравенства<br>228 уроков</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="3">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/6" class="link"></a>
+    
+    <h4>16 задача ЕГЭ</h4>
+    <div class="description">Планиметрия<br>184 урока</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="6">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/7" class="link"></a>
+    
+    <h4>17 задача ЕГЭ</h4>
+    <div class="description">Кредиты, вклады, оптимизация<br>123 урока и задачи</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="7">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/1" class="link"></a>
+    
+    <h4>19 задача ЕГЭ</h4>
+    <div class="description">Теория чисел<br>205 уроков</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="1">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/12" class="link"></a>
+    
+    <h4>Экспресс ЕГЭ 13-19</h4>
+    <div class="description">Подходит для повторения<br>107 уроков</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="12">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-2  hidden">
+                            <div class="card withdrawn">
+    
+            <a href="/courses/new/9" class="link"></a>
+    
+    <h4>11 задача ЕГЭ</h4>
+    <div class="description">Снят с продажи. Полностью содержится внутри курса "Первая часть ЕГЭ (1-12)"</div>
+
+    
+    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-2  hidden">
+                            <div class="card ">
+    
+            <a href="/courses/new/8" class="link"></a>
+    
+    <h4>20-22 задача ОГЭ</h4>
+    <div class="description">Алгебра 2й части ОГЭ<br>398 уроков</div>
+
+    
+            <div class="add-to-cart  " title="Добавить в корзину" data-course-id="8">
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-check-circle"></i>
+</div>    
+    </div>                        </div>
+                    
+                                    </div>
+            </div>
+        </div>
+    
+    
+        
+        <div class="panel panel-default darker ">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Бесплатные курсы (<span class="courses-counter">4</span>)
+                </h4>
+            </div>
+            <div class="panel-body pb-2 tags-filtered">
+                <div class="row list-of-cards">
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 tag-2 ">
+                            <div class="card ">
+    
+            <a href="/courses/new/17" class="link"></a>
+    
+    <h4>Все темы ЕГЭ</h4>
+    <div class="description">Разбор всех номеров ЕГЭ профильного уровня</div>
+
+    
+    
+    </div>                        </div>
+                    
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 tag-2 ">
+                            <div class="card ">
+    
+            <a href="/courses/15" class="link"></a>
+
+            
+    <h4>Разборы тем ЕГЭ</h4>
+    <div class="description">Стримы с решениями задач по задачам ЕГЭ профильного уровня</div>
+
+            <a href="#" class="read-more" data-course-id="15" title="Подробнее"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+    
+    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 tag-2 ">
+                            <div class="card ">
+    
+            <a href="/courses/16" class="link"></a>
+
+            
+    <h4>Геометрия экспресс</h4>
+    <div class="description">Главные факты школьного курса геометрии</div>
+
+            <a href="#" class="read-more" data-course-id="16" title="Подробнее"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+    
+    
+    </div>                        </div>
+                                                                    <div class="col-lg-3 col-md-4 col-xs-6 tag-element tag-1 tag-2 ">
+                            <div class="card ">
+    
+            <a href="/courses/14" class="link"></a>
+
+            
+    <h4>Формулы ЕГЭ и ОГЭ по математике</h4>
+    <div class="description">Подборки формул</div>
+
+            <a href="#" class="read-more" data-course-id="14" title="Подробнее"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+    
+    
+    </div>                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+                    <footer id="main-footer">
+                        2021 ©, ИП Иванов Дмитрий Михайлович
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+                    <!-- SignIn modal content -->
+            <div id="login-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="centered-header">
+                                Вход на сайт
+                            </div>
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link" id="vk-login-tab" data-toggle="tab" href="#vk-login" role="tab" aria-controls="vk-login" aria-selected="false">ВК</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="email-login-tab" data-toggle="tab" href="#email-login" role="tab" aria-controls="email-login" aria-selected="true">Почта</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="vk-login" role="tabpanel" aria-labelledby="vk-login-tab">
+                                    <div class="alert alert-warning" role="alert">
+                                        Используйте ваш ВК для того, чтобы войти в систему
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary vk-auth-button" data-popup="/auth/vk">
+                                            Войти через <i class="fab fa-vk"></i>
+                                        </button>
+                                    </div>
+                                    <hr>
+                                    <div class="text-center">
+                                        Пользуясь сайтом вы автоматически принимаете <a href="/pages/soglashenie">пользовательское соглашение</a>.
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="email-login" role="tabpanel" aria-labelledby="email-login-tab">
+                                    <form id="w1" class="login-form" action="/login" method="post">
+<input type="hidden" name="_csrf" value="yvHW2aBPiuM3a21F51N3t54BgJ_N5wH-VCvOR4NaDWiSvqGulTvcvG4_JRPQGTjd8m7Qq6_QN4QHQ5cs7hFUPw==">                                        <div class="form-group field-loginform-email required">
+
+<input type="text" id="loginform-email" class="form-control" name="LoginForm[email]" autofocus placeholder="Ваш e-mail" aria-required="true">
+
+<p class="help-block"></p>
+</div>
+                                        <div class="form-group field-loginform-password required">
+
+<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" placeholder="Ваш пароль" aria-required="true">
+
+<p class="help-block"></p>
+</div>                                        <div class="checkbox pull-right forgot-password-wrapper">
+                                            <a href="#" id="forgot-password">Забыли пароль?</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="form-group text-center">
+                                            <button class="btn btn-rounded btn-primary" type="submit">Войти</button>
+                                        </div>
+                                        <hr>
+                                        <div class="text-center">
+                                            Ещё не с нами? <a href="#" class="show-signup-popup">Регистрация</a> Пользуясь сайтом вы автоматически принимаете <a href="/pages/soglashenie">пользовательское соглашение</a>.
+                                        </div>
+                                    </form>                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <!-- Signup modal content -->
+            <div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="centered-header">
+                                Регистрация
+                            </div>
+
+                            <div class="alert alert-warning" role="alert">
+                                Зарегистрироваться можно только используя аккаунт "Вконтакте"
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="agree_with_terms" autocomplete="off">
+                                        Я согласен с <a href="/pages/soglashenie" target="_blank">пользовательским соглашением</a>
+                                    </label>
+                                    <p class="help-block help-block-error"></p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary vk-auth-button" data-popup="/auth/vk" disabled>
+                                    Зарегистрироваться через <i class="fab fa-vk"></i>
+                                </button>
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                Уже зарегистрированы? <a href="#" class="show-login-popup">Войти</a>
+                            </div>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <!-- remind modal -->
+            <div id="remind-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <form id="password-remind" action="/rubrics/1" method="post">
+<input type="hidden" name="_csrf" value="yvHW2aBPiuM3a21F51N3t54BgJ_N5wH-VCvOR4NaDWiSvqGulTvcvG4_JRPQGTjd8m7Qq6_QN4QHQ5cs7hFUPw==">                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title">Забыли пароль?</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Чтобы выслать код сброса пароля, пожалуйста, введите ваш адрес электронной почты.</p>
+                            <input type="email" name="email" placeholder="E-mail" required class="form-control placeholder-no-fix">
+                        </div>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">Отмена</button>
+                            <button class="btn btn-success" type="submit">Отправить</button>
+                        </div>
+                        </form>                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+        
+        
+        <!-- review modal -->
+        <div id="course-info-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="waiter text-center">
+                            <div class="progress progress-striped active progress-sm">
+                                <div style="width: 100%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" role="progressbar" class="progress-bar progress-bar-primary">
+                                    <span class="sr-only">45% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <!-- add to cart -->
+        <div id="add-to-cart-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <form id="add-to-cart-form" action="/rubrics/1" method="post">
+<input type="hidden" name="_csrf" value="yvHW2aBPiuM3a21F51N3t54BgJ_N5wH-VCvOR4NaDWiSvqGulTvcvG4_JRPQGTjd8m7Qq6_QN4QHQ5cs7hFUPw==">                    <input type="hidden" name="selected-course" value>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title">Выберите период доступа</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="tariffs">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-success">Добавить</button>
+                    </div>
+                    </form>                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <!-- info message -->
+        <div id="info-message-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title">Важная информация</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-message">Сообщение</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <!-- report modal -->
+        <div id="report-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <form id="report-form" action="/rubrics/1" method="post">
+<input type="hidden" name="_csrf" value="yvHW2aBPiuM3a21F51N3t54BgJ_N5wH-VCvOR4NaDWiSvqGulTvcvG4_JRPQGTjd8m7Qq6_QN4QHQ5cs7hFUPw==">                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title">Сообщение об ошибке</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger" role="alert">
+                            ВНИМАНИЕ: НЕ задавайте здесь вопросы! Для этого есть <strong>форум</strong>. <a href="#" id="forum-link">Задать вопрос на форуме</a>
+                        </div>
+                        <p>Опишите ошибку</p>
+                        <textarea name="description" rows="5" required class="form-control placeholder-no-fix"></textarea>
+                        <input type="hidden" name="id" value="0">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-success">Сообщить</button>
+                    </div>
+                    </form>                </div>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <!-- filters modal -->
+                        <!-- !filters modal -->
+
+        <div id="info-about-cart-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title">СИСТЕМА СКИДОК</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-message">
+                            При покупке 2 и более курсов разом действуют скидки. Добавьте несколько курсов в корзину и оплатите из неё по скидочной цене.
+                            Подробнее о системе скидок <a href="/pages/discounts">тут</a>.
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success see-more">Добавить еще курсы</button>
+                        <button type="button" class="btn btn-default purchase-one" data-dismiss="modal">Купить только этот курс</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="test-result-modal" role="dialog" tabindex="-1" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                                    <h4 class="modal-title">Тест завершен, спасибо!</h4>
+                                            </div>
+                    <div class="modal-body" id="test-result" data-tour-id="24725">
+                        Результат вашего теста:
+                        <p>
+                            Всего задач в тесте: <b><span class="tasks-count">0</span></b><br>
+                            Вы ответили верно на: <span class="stat_resp_crt"><b><span class="tasks-correct">0</span></b> (<span class="tasks-percent">0</span> %)</span><br>
+                            Вы ответили неверно на: <span class="stat_resp_incrt"><b><span class="tasks-incorrect">0</span></b></span>
+                                                    </p>
+                                                    <div id="extra-info" class="hidden">
+                                <h4>Статистика по «<span class="template-name"></span>»</h4>
+                                <p>
+                                    Ваш первичный балл: <b><span class="primary-score">0</span></b><br>
+                                    Ваш тестовый балл: <b><span class="secondary-score">0</span></b><br>
+                                </p>
+                            </div>
+                                            </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal"> Ок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                
+        
+        
+                    <!-- ban request modal -->
+            <div id="guest-popup-modal" role="dialog" tabindex="-1" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title">Бесплатный курс</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Бесплатный мини-курс по 13 номеру ЕГЭ</p>
+
+<p>30 видео (6 часов теории и практики) по темам:<br>
+&ndash; тригонометрические уравнения<br>
+&ndash; показательные уравнения<br>
+&ndash; логарифмические уравнения</p>
+
+<p>Получить можно здесь: <a href="https://vk.com/uchus.online?w=app5898182_-86125741&amp;utm_source=uchus.online&amp;utm_medium=site&amp;utm_campaign=popap" target="_blank">ПОЛУЧИТЬ КУРС</a></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-default" data-dismiss="modal">Ок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal -->
+        
+        
+        
+        <div id="global-preloader">
+            <div class="wrapper">
+                <div class="loader">Загрузка...</div>
+            </div>
+        </div>
+
+        
+        <script src="js/0645819187b45d753efc9b96e547d92d.js"></script>
+<script>$('.view-only .tag-editor-tag,.view-only .tag-editor-delete').click(function(){var li=$(this).closest('li');$('.view-only li').removeClass('active');li.addClass('active');if(li.attr('data-target')!='all'){$('.tags-filtered .tag-element').addClass('hidden');$('.tags-filtered .tag-element.'+li.attr('data-target')).removeClass('hidden');}else
+$('.tags-filtered .tag-element').removeClass('hidden');$('.tags-filtered').each(function(){var panel=$(this).closest('.panel');var count=panel.find('.tag-element:not(.hidden)').length;panel.find('.courses-counter').html(count);if(count)
+panel.removeClass('hidden');else
+panel.addClass('hidden');});$('[name="selected_tag"]').val(li.attr('data-id'));});
+var replacer="/replacer/vimeo/";function replaceFakeVideos(){if($('.fake-video:not(.visible)').length){showGlobalLoader();var count_of_loaded_videos=0,length_of_videos_to_load=$('.fake-video:not(.visible)').length;$('.fake-video:not(.visible)').each(function(){var that=this;var url=$(this).find('iframe').attr('src');var exploded=url.split('/');var id=parseInt(exploded[exploded.length-1]);$.ajax({url:replacer+id,type:'GET',dataType:'json',success:function(r){console.log(r);if(r&&r['result']){$(that).find('iframe').attr('src','https://player.vimeo.com/video/'+r['result']);$(that).addClass('visible');}
+count_of_loaded_videos++;if(count_of_loaded_videos===length_of_videos_to_load)
+hideGlobalLoader();},error:function(r){count_of_loaded_videos++;if(count_of_loaded_videos===length_of_videos_to_load)
+hideGlobalLoader();}});});}}
+replaceFakeVideos();$('#password-remind button[type="submit"]').click(function(e){e.preventDefault();showGlobalLoader();$.ajax({type:"POST",url:'/remind',data:{email:$('#password-remind [name="email"]').val()},success:function(data){$('#remind-modal').modal('hide');toastr.success(data&&data.message?data.message:'Новый пароль будет отправлен на вашу почту');hideGlobalLoader();},error:function(error){toastr.error(error['responseJSON']&&error['responseJSON']['message']?error['responseJSON']['message']:'Неизвестная ошибка');hideGlobalLoader();}});return false;});$('html').on('click','.add-to-cart:not(.checked)',function(e){e.preventDefault();showGlobalLoader();var link='/courses/0/tariffs'.replace('0',$(this).attr('data-course-id'));$('[name="selected-course"]').val($(this).attr('data-course-id'));$.ajax({type:"GET",url:link,dataType:'json',success:function(r){if(r&&r['result']){var tariffs='';for(var i=0;i<r['result'].length;i++){var tariff=r['result'][i];tariffs+='<div class="radio">'+'<label>'+'<input type="radio" name="tariff" value="'+tariff[0]+'" checked="">&nbsp;&nbsp;доступ до '+tariff[2]+' ('+tariff[1]+',00&nbsp;₽)'+'</label>'+'</div>';}
+$('#add-to-cart-modal #tariffs').html(tariffs);$('#add-to-cart-modal').modal('show');}
+hideGlobalLoader();},error:function(error){toastr.error(error['responseJSON']&&error['responseJSON']['message']?error['responseJSON']['message']:'Неизвестная ошибка');hideGlobalLoader();}});return false;});$('html').on('click','.add-to-cart.checked',function(e){e.preventDefault();window.location.replace('/cart');});$('#add-to-cart-modal button[type="submit"]').click(function(e){e.preventDefault();$('#add-to-cart-modal').modal('hide');$('#login-modal').modal('show');toastr.error('Войдите в систему для того, чтобы воспользоваться корзиной.');return false;showGlobalLoader();var selected_tariff=$('[name="tariff"]:checked').val();if(selected_tariff&&parseInt(selected_tariff)>0){var link='/cart/add/'+$('[name="selected-course"]').val()+'/'+selected_tariff;$.ajax({type:"GET",url:link,dataType:'json',success:function(r){updateCounters(r['user_notifications_count'],r['cart_elements_count']);hideGlobalLoader();showMessagePopup('Курс был добавлен в корзину. Продолжайте наполнять корзину или <a href="/cart">перейдите в нее</a>, чтобы оформить покупку.','');$('.add-to-cart[data-course-id="'+$('[name="selected-course"]').val()+'"]').addClass('checked').removeAttr('title');$('#add-to-cart-modal').modal('hide');},error:function(error){toastr.error(error['responseJSON']&&error['responseJSON']['message']?error['responseJSON']['message']:'Неизвестная ошибка');$('#add-to-cart-modal').modal('hide');hideGlobalLoader();}});}
+return false;});$('#report-modal button[type="submit"]').click(function(e){e.preventDefault();if(!$('#report-modal [name="description"]').val())
+return false;showGlobalLoader();$.ajax({type:"POST",url:'/task/report',data:{description:$('#report-modal [name="description"]').val(),id:$('#report-modal [name="id"]').val()},success:function(data){$('#report-modal').modal('hide');toastr.success(data&&data.message?data.message:'Ваше сообщение было успешно отправлено');hideGlobalLoader();},error:function(error){$('#report-modal').modal('hide');toastr.error(error['responseJSON']&&error['responseJSON']['message']?error['responseJSON']['message']:'Неизвестная ошибка');hideGlobalLoader();}});return false;});test_finished=false;$('html').on('click','.show-resolution',function(e){e.preventDefault();if($(this).closest('#additional-test').length&&!test_finished&&0){var that=this;if(confirm('Если открыть решение, тест будет завершен!')){$('.finish-test').trigger('click').promise().done(function(){showGlobalLoader();$(this).unbind("ajaxStop");test_finished=true;setTimeout(function(){processResolutionButtonPressed(that);},200);});}}else
+processResolutionButtonPressed(this);return false;});$('#purchase-all').click(function(e){e.preventDefault();$('#login-modal').modal('show');toastr.error('Войдите в систему для того, чтобы воспользоваться корзиной.');return false;var link='/cart/add/all';var selected_tag=$('[name="selected_tag"]');if(selected_tag.length>0&&parseInt(selected_tag.val())>0)
+link+='?selected_tag='+parseInt(selected_tag.val())+'&';else
+link+='?';link+='rubric_id='+$(this).attr('data-rubric-id');$.ajax({type:"GET",url:link,dataType:'json',success:function(r){updateCounters(r['user_notifications_count'],r['cart_elements_count']);showMessagePopup('Все курсы были успешно добавлены. <a href="/cart">Нажмите тут</a> чтобы перейти в корзину','');var was_added=r['courses_was_added'];$('.add-to-cart').each(function(){if(was_added.indexOf(parseInt($(this).attr('data-course-id')))!=-1)
+$(this).addClass('checked').removeAttr('title');});},error:function(error){alert(error&&error.message?error.message:'Произошла ошибка');}});return false;});$('#toggle-forum-filters').click(function(){$('.forum-post-search').slideToggle();});
+setTimeout(function(){if(!$('#login-modal').hasClass('in')&&!$('#save-promocode-modal').hasClass('in')){$('#guest-popup-modal').modal({backdrop:'static',keyboard:false}).on('shown.bs.modal',function(e){$.ajax({type:'GET',url:'/guest/shown',dataType:'json',error:function(error){toastr.error(error['responseJSON']&&error['responseJSON']['message']?error['responseJSON']['message']:'Неизвестная ошибка');}});});}},5000);</script>
+<script>jQuery(function ($) {
+jQuery('#w1').yiiActiveForm([{"id":"loginform-email","name":"email","container":".field-loginform-email","input":"#loginform-email","encodeError":false,"validate":function(attribute,value,messages,deferred,$form){yii.validation.required(value,messages,{"message":"Необходимо заполнить «Email»."});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","encodeError":false,"validate":function(attribute,value,messages,deferred,$form){yii.validation.required(value,messages,{"message":"Необходимо заполнить «Пароль»."});}}],{"encodeErrorSummary":false});
+jQuery('#password-remind').yiiActiveForm([],[]);
+jQuery('#add-to-cart-form').yiiActiveForm([],[]);
+jQuery('#report-form').yiiActiveForm([],[]);
+});</script>        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(47242167, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        </script>
+        <noscript><div><img src="47242167" style="position:absolute; left:-9999px;" alt></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    </body>
 </html>
